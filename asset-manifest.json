@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-portfolio-template/static/css/main.b68f1a92.css",
-    "main.js": "/react-portfolio-template/static/js/main.ba51d3cf.js",
-    "static/js/453.b05d8aa5.chunk.js": "/react-portfolio-template/static/js/453.b05d8aa5.chunk.js",
-    "static/media/profile-pic.png": "/react-portfolio-template/static/media/profile-pic.5f01db9c90057e7b9b1f.png",
-    "static/media/bg-light.png": "/react-portfolio-template/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/bg-dark.png": "/react-portfolio-template/static/media/bg-dark.f420c6b8458af72de935.png",
-    "static/media/project-2.png": "/react-portfolio-template/static/media/project-2.e65347866ed7eea9d830.png",
-    "static/media/project-3.png": "/react-portfolio-template/static/media/project-3.e65347866ed7eea9d830.png",
-    "static/media/project-1.png": "/react-portfolio-template/static/media/project-1.ca23a065683c6e7de4dd.png",
-    "static/media/cognizant_logo.png": "/react-portfolio-template/static/media/cognizant_logo.754284e257d61ccf1b2d.png",
-    "index.html": "/react-portfolio-template/index.html",
-    "main.b68f1a92.css.map": "/react-portfolio-template/static/css/main.b68f1a92.css.map",
-    "main.ba51d3cf.js.map": "/react-portfolio-template/static/js/main.ba51d3cf.js.map",
-    "453.b05d8aa5.chunk.js.map": "/react-portfolio-template/static/js/453.b05d8aa5.chunk.js.map"
+    "main.css": "/Abhisheknakka/react-portfolio-template/static/css/main.ac221dfc.css",
+    "main.js": "/Abhisheknakka/react-portfolio-template/static/js/main.a2d6ecbf.js",
+    "static/js/453.b05d8aa5.chunk.js": "/Abhisheknakka/react-portfolio-template/static/js/453.b05d8aa5.chunk.js",
+    "static/media/profile-pic.png": "/Abhisheknakka/react-portfolio-template/static/media/profile-pic.5f01db9c90057e7b9b1f.png",
+    "static/media/bg-light.png": "/Abhisheknakka/react-portfolio-template/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark.png": "/Abhisheknakka/react-portfolio-template/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/project-2.png": "/Abhisheknakka/react-portfolio-template/static/media/project-2.e65347866ed7eea9d830.png",
+    "static/media/project-3.png": "/Abhisheknakka/react-portfolio-template/static/media/project-3.e65347866ed7eea9d830.png",
+    "static/media/project-1.png": "/Abhisheknakka/react-portfolio-template/static/media/project-1.ca23a065683c6e7de4dd.png",
+    "static/media/cognizant_logo.png": "/Abhisheknakka/react-portfolio-template/static/media/cognizant_logo.754284e257d61ccf1b2d.png",
+    "index.html": "/Abhisheknakka/react-portfolio-template/index.html",
+    "main.ac221dfc.css.map": "/Abhisheknakka/react-portfolio-template/static/css/main.ac221dfc.css.map",
+    "main.a2d6ecbf.js.map": "/Abhisheknakka/react-portfolio-template/static/js/main.a2d6ecbf.js.map",
+    "453.b05d8aa5.chunk.js.map": "/Abhisheknakka/react-portfolio-template/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b68f1a92.css",
-    "static/js/main.ba51d3cf.js"
+    "static/css/main.ac221dfc.css",
+    "static/js/main.a2d6ecbf.js"
   ]
 }
