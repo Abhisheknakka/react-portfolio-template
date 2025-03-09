@@ -153,3 +153,31 @@ p, a, h1, h2, h3, h4, h5, label, button {
     }
   }
 }
+/* Default dark mode for icons */
+.social-links a {
+  margin: 0 15px; /* Horizontal spacing between icons */
+  font-size: 40px; /* Icon size */
+  color: #ffffff; /* Default color for dark mode */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-links a:hover {
+  color: #5000ca; /* Highlight color on hover */
+}
+
+/* Light mode specific styles */
+.light-mode .social-links a {
+  color: #0d1116; /* Dark color for light mode */
+}
+
+.light-mode .social-links a:hover {
+  color: #5000ca; /* Highlight color on hover in light mode */
+}
+
+/* Responsive size adjustments */
+@media (max-width: 768px) {
+  .social-links a {
+    font-size: 35px; /* Slightly smaller size for mobile */
+  }
+}
+

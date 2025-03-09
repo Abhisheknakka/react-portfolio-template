@@ -16,50 +16,44 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
+            date="Mar 2022 – Dec 2023"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Technical Analyst</h3>
+            <h4 className="vertical-timeline-element-subtitle">Darwinbox, Hyderabad, India</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Designed and implemented complex data models and ETL pipelines using Azure Data Factory and Databricks.
+              Improved data accuracy by 30% through profiling and quality assessments.
+              Managed metadata using Azure Purview for regulatory compliance.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
+            date="Jan 2022 – Mar 2022"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Business Analyst Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Darwinbox, Hyderabad, India</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              Gathered and analyzed data to improve client success rates.
+              Automated reports and dashboards using Python and Tableau.
+              Enhanced API integration for seamless data flow between platforms like SAP and Oracle.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
+            date="Jun 2021 – Dec 2022"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Programmer Analyst</h3>
+            <h4 className="vertical-timeline-element-subtitle">Cognizant, Hyderabad, India</h4>
             <p>
-              Full-stack Development, API Development, User Experience
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
-            <p>
-              Automation, Data Governance, Statistical Analysis
+              Developed scalable data pipelines using PySpark and SQL.
+              Automated ETL workflows with Apache Airflow.
+              Integrated external data sources using REST APIs.
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

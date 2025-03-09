@@ -1,44 +1,45 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faCloud, faCogs } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
+    "Data Modeling",
+    "ETL/ELT",
+    "Data Quality",
+    "Data Profiling",
+    "Metadata Management",
+    "Data Lineage",
     "Python",
     "SQL",
-    "PostgreSQL",
-    "Postman"
+    "R",
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "Azure Data Lake",
+    "Azure Synapse",
+    "Databricks",
+    "Azure Data Factory",
+    "AWS S3",
+    "AWS EC2",
+    "Apache Spark",
+    "Delta Lake",
+    "PostgreSQL",
+    "SQL Server",
+    "MySQL",
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "Apache Airflow",
+    "Jenkins",
+    "Docker",
+    "Kubernetes",
+    "DBT",
+    "Power BI",
+    "Tableau",
+    "Dataiku",
 ];
 
 function Expertise() {
@@ -48,9 +49,9 @@ function Expertise() {
             <h1>Expertise</h1>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <FontAwesomeIcon icon={faDatabase} size="3x"/>
+                    <h3>Data Engineering</h3>
+                    <p>I specialize in building robust data pipelines, ensuring data quality, and managing large-scale data systems. I am proficient in data modeling, ETL/ELT processes, and leveraging cloud platforms for scalable data storage and processing.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -60,9 +61,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <FontAwesomeIcon icon={faCloud} size="3x"/>
+                    <h3>Cloud Platforms & Data Storage</h3>
+                    <p>Expert in utilizing cloud services for data storage, processing, and orchestration. I have hands-on experience with Azure and AWS services, enabling seamless data workflows and cloud-based solutions.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -72,9 +73,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <FontAwesomeIcon icon={faCogs} size="3x"/>
+                    <h3>Orchestration & DevOps</h3>
+                    <p>I have experience in setting up and managing automation for data pipelines, including orchestration with Apache Airflow and CI/CD with Jenkins. I am proficient in containerization and cloud-native DevOps practices.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
