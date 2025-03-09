@@ -36,3 +36,18 @@
         color: rgb(39, 40, 34);
     }
 }
+
+.visible-link {
+    visibility: visible;   /* Ensure the text is always visible */
+    opacity: 1;            /* Make sure the text is not transparent */
+    display: inline;       /* Ensure it's inline */
+    color: #5000ca;        /* Initial color */
+    text-decoration: none; /* Remove underline (if you don't want it) */
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  .visible-link:hover {
+    color: #ff5733;        /* Color when hovered (you can choose any color) */
+    text-decoration: underline; /* Optional: Add underline on hover */
+  }
+  

@@ -31,10 +31,15 @@ function Timeline() {
                 <img 
                   src={darwinboxLogo} 
                   alt="Darwinbox Logo" 
-                  style={{ width: "120px", verticalAlign: "middle", marginRight: "10px" }} 
+                  style={{ width: "80px", verticalAlign: "middle", marginRight: "10px" }} 
                 />
               </a>
-              <a href="https://www.darwinbox.com/" target="_blank" rel="noreferrer">
+              <a 
+                href="https://www.darwinbox.com/" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="visible-link"
+              >
                 Darwinbox, Hyderabad, India
               </a>
             </h4>
@@ -52,18 +57,24 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Business Analyst Intern</h3>
+            <h3 className="vertical-timeline-element-title">Business Analyst</h3>
             <h4 className="vertical-timeline-element-subtitle">
               <a href="https://www.darwinbox.com/" target="_blank" rel="noreferrer">
                 <img 
                   src={darwinboxLogo} 
                   alt="Darwinbox Logo" 
-                  style={{ width: "120px", verticalAlign: "middle", marginRight: "10px" }} 
+                  style={{ width: "80px", verticalAlign: "middle", marginRight: "10px" }} 
                 />
               </a>
-              <a href="https://www.darwinbox.com/" target="_blank" rel="noreferrer">
+              <a 
+                href="https://www.darwinbox.com/" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="visible-link"
+              >
                 Darwinbox, Hyderabad, India
               </a>
+
             </h4>
             <p>
               Gathered and analyzed data to improve client success rates.
@@ -85,10 +96,15 @@ function Timeline() {
                 <img 
                   src={cognizantLogo} 
                   alt="Cognizant Logo" 
-                  style={{ width: "120px", verticalAlign: "middle", marginRight: "10px" }} 
+                  style={{ width: "80px", verticalAlign: "middle", marginRight: "10px" }} 
                 />
               </a>
-              <a href="https://www.cognizant.com/" target="_blank" rel="noreferrer">
+              <a 
+                href="https://www.darwinbox.com/" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="visible-link"
+              >
                 Cognizant, Hyderabad, India
               </a>
             </h4>
