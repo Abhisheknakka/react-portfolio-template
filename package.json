@@ -1,8 +1,8 @@
 {
   "name": "react-portfolio-template",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
-  "homepage": "https://github.com/Abhisheknakka/react-portfolio-template",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
