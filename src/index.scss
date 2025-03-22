@@ -181,3 +181,18 @@ p, a, h1, h2, h3, h4, h5, label, button {
   }
 }
 
+.badges-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.badge-image {
+  width: 100px; /* Reduced width */
+  height: auto;
+  margin: 8px; /* Slightly reduced margin */
+}
+
+/* Add other styles as needed */
+

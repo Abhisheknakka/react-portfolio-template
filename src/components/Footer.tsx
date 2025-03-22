@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer>
       
-      <p>Theme by <a href="https://github.com/yujisatojr/react-portfolio-template" target="_blank" rel="noreferrer">Yuji Sato</a></p>
+      <p>Theme by Yuji Sato</p>
     </footer>
   );
 }
