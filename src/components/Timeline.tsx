@@ -29,7 +29,7 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technical Analyst</h3>
+            <h3 className="vertical-timeline-element-title">Technical Analyst - Integrations</h3>
             <h4 className="vertical-timeline-element-subtitle">
               <a href="https://www.darwinbox.com/" target="_blank" rel="noreferrer">
                 <img
@@ -61,7 +61,7 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Business Analyst</h3>
+            <h3 className="vertical-timeline-element-title">Integrations Analyst</h3>
             <h4 className="vertical-timeline-element-subtitle">
               <a href="https://www.darwinbox.com/" target="_blank" rel="noreferrer">
                 <img
@@ -87,7 +87,7 @@ function Timeline() {
             </p>
           </VerticalTimelineElement>
 
-          {/* Cognizant - Programmer Analyst */}
+          {/* Cognizant - Jr. Data Engineer*/}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Jun 2021 – Dec 2022"
@@ -122,11 +122,11 @@ function Timeline() {
           {/* Phoenix Analytics - Business Intelligence Analyst */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="Jan 2020 – Jun 2021"
+            date="Jan 2020 – May 2021"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Designer & Data Analyst</h3>
+            <h3 className="vertical-timeline-element-title">Data Analyst (Part time) </h3>
             <h4 className="vertical-timeline-element-subtitle">
               <a href="https://www.facebook.com/p/Phoenix-Analytics-100064112640425/?locale=ar_AR" target="_blank" rel="noreferrer">
                 <img
@@ -145,11 +145,13 @@ function Timeline() {
               </a>
             </h4>
             <p>
-              Developed BI solutions and dashboards to visualize key performance indicators.
-              Conducted data analysis to identify trends and provide actionable insights.
-              Collaborated with stakeholders to define reporting requirements and improve data-driven decision-making.
+              Developed BI dashboards to visualize key performance indicators, enabling data-driven decision-making for small-scale food industries.
+            Conducted data analysis to identify revenue trends and provided actionable insights, collaborating with stakeholders to refine reporting requirements.
+
             </p>
           </VerticalTimelineElement>
+
+          
 
         </VerticalTimeline>
       </div>

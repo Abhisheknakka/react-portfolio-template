@@ -31,7 +31,7 @@ function Contact() {
                   <a href="mailto:nakka.abhishek99@gmail.com" target="_blank" rel="noreferrer">
                     <EmailIcon sx={{ fontSize: 50 }} />
                   </a>
-                  <a href="https://www.instagram.com/your_instagram_username/" target="_blank" rel="noreferrer">
+                  <a href="https://www.instagram.com/_nakka_abhishek_/" target="_blank" rel="noreferrer">
                     <InstagramIcon sx={{ fontSize: 50 }} />
                   </a>
                 </div>
