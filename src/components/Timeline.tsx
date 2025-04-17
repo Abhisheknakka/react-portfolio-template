@@ -29,7 +29,7 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technical Analyst - Integrations</h3>
+            <h3 className="vertical-timeline-element-title">Data Engineer - Integrations</h3>
             <h4 className="vertical-timeline-element-subtitle">
               <a href="https://www.darwinbox.com/" target="_blank" rel="noreferrer">
                 <img
@@ -94,7 +94,7 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Programmer Analyst</h3>
+            <h3 className="vertical-timeline-element-title">Jr. Data Engineer</h3>
             <h4 className="vertical-timeline-element-subtitle">
               <a href="https://www.cognizant.com/" target="_blank" rel="noreferrer">
                 <img
@@ -126,7 +126,7 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Data Analyst (Part time) </h3>
+            <h3 className="vertical-timeline-element-title"> Analyst </h3>
             <h4 className="vertical-timeline-element-subtitle">
               <a href="https://www.facebook.com/p/Phoenix-Analytics-100064112640425/?locale=ar_AR" target="_blank" rel="noreferrer">
                 <img
