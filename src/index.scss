@@ -198,11 +198,11 @@ p, a, h1, h2, h3, h4, h5, label, button {
 
 .resume-box {
   background: linear-gradient(135deg, #a64ac9, #6200ea); // purple-pink blend
-  padding: 1rem 1.2rem;
-  border-radius: 12px;
+  padding: 0.5rem 1rem; // reduced padding
+  border-radius: 8px;    // slightly less rounded
   margin-top: 1.2rem;
   display: inline-block;
-  box-shadow: 0 0 12px rgba(164, 74, 201, 0.4);
+  box-shadow: 0 0 6px rgba(164, 74, 201, 0.3); // lighter shadow
   transition: transform 0.2s ease;
   
   &:hover {
