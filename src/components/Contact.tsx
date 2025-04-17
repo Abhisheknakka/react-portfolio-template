@@ -15,7 +15,7 @@ function Contact() {
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={12} md={6}>
             <div className="contact_wrapper">
-              <Typography variant="h5">Contact Me</Typography>
+              <Typography variant="h3">Contact Me</Typography>
               <Typography variant="body1">Got a project waiting to be realized? Let's collaborate and make it happen!</Typography>
 
               {/* Social Media Section */}

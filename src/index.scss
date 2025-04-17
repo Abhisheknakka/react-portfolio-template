@@ -195,3 +195,36 @@ p, a, h1, h2, h3, h4, h5, label, button {
 }
 
 /* Add other styles as needed */
+
+.resume-box {
+  background: linear-gradient(135deg, #a64ac9, #6200ea); // purple-pink blend
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  margin-top: 1.2rem;
+  display: inline-block;
+  box-shadow: 0 0 12px rgba(164, 74, 201, 0.4);
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  .resume-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+
+    .resume-link {
+      font-size: 0.95rem;
+      color: #fff;
+      font-weight: 500;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        color: #ffe6ff;
+      }
+    }
+  }
+}

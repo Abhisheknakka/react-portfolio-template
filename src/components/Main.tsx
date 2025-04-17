@@ -28,15 +28,17 @@ function Main() {
           <p>Data Engineer</p>
 
           {/* === Resume and Contact Block === */}
-          <div className="resume-contact compact">
-            <a className="resume-link" href="https://drive.google.com/file/d/1f0439jlZ2gLv0yvneT6QvOXkPgqKtyU4/view?usp=drive_link" target="_blank" rel="noreferrer">
-              📄 Resume
-            </a>
-            {/*
+          <div className="resume-box">
+            <div className="resume-contact compact">
+              <a className="resume-link" href="https://drive.google.com/file/d/1f0439jlZ2gLv0yvneT6QvOXkPgqKtyU4/view?usp=drive_link" target="_blank" rel="noreferrer">
+                📄 Resume
+              </a>
+              {/* 
               <a className="email-link" href="mailto:nakka.abhishek99@gmail.com">
-              📧 nakka.abhishek99@gmail.com
-            </a>
-            */}
+                📧 nakka.abhishek99@gmail.com
+              </a>
+              */}
+            </div>
           </div>
 
           <div className="mobile_social_icons">
