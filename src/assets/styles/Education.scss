@@ -1,0 +1,60 @@
+.education-container {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  
+    h1 {
+      color: white;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+  }
+  
+  .education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // adjust as needed
+    grid-gap: 50px;
+  }
+  
+  .education-item {
+    align-items: center;
+    text-align: left;
+  }
+  
+  .education-item h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: white;
+  }
+  
+  .education-item h3 {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 4px;
+  }
+  
+  .education-item p {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.5;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .education-container {
+      display: block;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    .education-grid {
+      display: initial;
+    }
+  
+    .education-item {
+      padding-bottom: 5%;
+    }
+  }
+  

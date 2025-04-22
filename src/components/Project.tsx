@@ -1,4 +1,5 @@
 import React from "react";
+import project0 from '../assets/images/project-0.jpg';
 import project1 from '../assets/images/project-1.png';
 import project2 from '../assets/images/project-2.png';
 import project3 from '../assets/images/project-3.jpeg';
@@ -11,6 +12,15 @@ function Project() {
     <div className="projects-container" id="projects">
         <h1>Personal Projects</h1>
         <div className="projects-grid">
+            <div className="project">
+                        <a href="" target="_blank" rel="noreferrer">
+                            <img src={project0} className="zoom" alt="thumbnail" width="100%" />
+                        </a>
+                        
+                            <h2>Child Welfare Disparities – Racial Disproportionality Analysis for CAST</h2>
+                        
+                        <p>Partnered with Children's  Aid Socity of Toronto (CAST) and Trent University to identify racial disproportionality in child protection investigations across Toronto. Integrated over 150K CAST records with demographic and crime datasets, and built interactive maps and plots to uncover systemic biases. Tools used: Pandas, Folium, GeoJSON.</p>
+            </div>
             <div className="project">
                 <a href="https://github.com/Abhisheknakka/AI-Restaurent-Chat-bot" target="_blank" rel="noreferrer"><img src={project4} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/Abhisheknakka/AI-Restaurent-Chat-bot" target="_blank" rel="noreferrer"><h2>Food AI – AI Driven Restaurant Menu Chatbot</h2></a>
