@@ -7,3 +7,4 @@ export { default as Project } from "./Project";
 export { default as Volunteer } from "./Volunteer"; // New export added
 export { default as Contact } from "./Contact";
 export { default as Education } from './Education';
+export { default as Certifications } from './Certifications';
