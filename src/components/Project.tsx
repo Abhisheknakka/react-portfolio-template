@@ -18,7 +18,7 @@ function Project() {
                         </a>
                         
                             <h2>Child Welfare Disparities – Racial Disproportionality Analysis for CAST</h2>
-                        
+                            
                         <p>Partnered with Children's  Aid Socity of Toronto (CAST) and Trent University to identify racial disproportionality in child protection investigations across Toronto. Integrated over 150K CAST records with demographic and crime datasets, and built interactive maps and plots to uncover systemic biases. Tools used: Pandas, Folium, GeoJSON.</p>
             </div>
             <div className="project">

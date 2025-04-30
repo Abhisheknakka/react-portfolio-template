@@ -4,6 +4,7 @@ import "../assets/styles/Certifications.scss";
 // Import your updated badge images
 import azureAiCert from "../assets/images/azure-ai-engineer.png";  // <- Azure AI badge
 import dbtFundamentalsCert from "../assets/images/dbt-fundamentals.png"; // <- dbt badge
+import databricksFundamentalsCert from "../assets/images/lakehouse-fundamentals.png"; // <- dbt badge
 
 function Certifications() {
     return (
@@ -22,6 +23,19 @@ function Certifications() {
                         </h3>
                         <p>Demonstrated expertise in using Azure AI services like Cognitive Services, Azure Machine Learning, and conversational AI to build AI solutions.</p>
                     </div>
+
+                    <div className="skill">
+                        <a href="" target="_blank" rel="noreferrer">
+                            <img src={dbtFundamentalsCert} alt="Dtabricks Lakehouse Certification" className="cert-icon" />
+                        </a>
+                        <h3>
+                            <a href="" target="_blank" rel="noreferrer">
+                                Databricks Lakehouse Certification
+                            </a>
+                        </h3>
+                        <p>Mastered core concepts of the Lakehouse architecture, including Delta Lake, Unity Catalog, and Databricks' approach to unifying data engineering, analytics, and machine learning on a single platform.</p>
+                        </div>
+
 
                     <div className="skill">
                         <a href="https://credentials.getdbt.com/abc53098-6107-4f98-a506-24edc4ce90c6#acc.XBM1LgYV" target="_blank" rel="noreferrer">
