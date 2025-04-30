@@ -26,7 +26,7 @@ function Certifications() {
 
                     <div className="skill">
                         <a href="" target="_blank" rel="noreferrer">
-                            <img src={dbtFundamentalsCert} alt="Dtabricks Lakehouse Certification" className="cert-icon" />
+                            <img src={databricksFundamentalsCert} alt="Dtabricks Lakehouse Certification" className="cert-icon" />
                         </a>
                         <h3>
                             <a href="" target="_blank" rel="noreferrer">
