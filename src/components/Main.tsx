@@ -30,7 +30,7 @@ function Main() {
           {/* === Resume and Contact Block === */}
           <div className="resume-box">
             <div className="resume-contact compact">
-              <a className="resume-link" href="https://drive.google.com/file/d/1tDktU32gWE3-i7y5LInJjQNet8rdLoQS/view?usp=sharing" target="_blank" rel="noreferrer">
+              <a className="resume-link" href="https://drive.google.com/file/d/1zm0PkFEU0SkFRYxCumxbj2lvON1QeFi6/view?usp=sharing" target="_blank" rel="noreferrer">
                 📄 Resume
               </a>
               {/* 
