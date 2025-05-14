@@ -1,7 +1,28 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHandsHelping } from "@fortawesome/free-solid-svg-icons";
-import '../assets/styles/Volunteer.scss';
+import "../assets/styles/Volunteer.scss";
+
+const volunteerActivities = [
+  {
+    title: "Trekking in Banff",
+    description: "Hiked Sulphur Mountain — snowy peaks and serene trails in Alberta.",
+    image: "https://via.placeholder.com/300x200?text=Trekking"
+  },
+  {
+    title: "Beach Cleanup Drive",
+    description: "Led a Wasaga Beach cleanup with 30+ volunteers to promote eco-awareness.",
+    image: "https://via.placeholder.com/300x200?text=Cleanup"
+  },
+  {
+    title: "Art & Culture Workshop",
+    description: "Organized mural painting for children at a community event.",
+    image: "https://via.placeholder.com/300x200?text=Art+Workshop"
+  },
+  {
+    title: "Youth Mentorship",
+    description: "Guided high schoolers on career planning and study skills.",
+    image: "https://via.placeholder.com/300x200?text=Mentorship"
+  }
+];
 
 function VolunteerActivities() {
   return (
@@ -9,49 +30,15 @@ function VolunteerActivities() {
       <div className="volunteer-container">
         <h1>Volunteer & Extracurricular Activities</h1>
         <div className="volunteer-grid">
-          {/* Volunteer Experience 1 */}
-          <div className="volunteer-card">
-            <div className="volunteer-icon">
-              <FontAwesomeIcon icon={faHandsHelping} size="2x" />
+          {volunteerActivities.map((activity, index) => (
+            <div className="volunteer-card" key={index}>
+              <div className="volunteer-image">
+                <img src={activity.image} alt={activity.title} />
+              </div>
+              <h3>{activity.title}</h3>
+              <p>{activity.description}</p>
             </div>
-            <h3>Community Outreach</h3>
-            <p>
-              Coordinated local events and activities that foster community engagement.
-            </p>
-          </div>
-
-          {/* Volunteer Experience 2 */}
-          <div className="volunteer-card">
-            <div className="volunteer-icon">
-              <FontAwesomeIcon icon={faHandsHelping} size="2x" />
-            </div>
-            <h3>Environmental Cleanup</h3>
-            <p>
-              Organized neighborhood cleanups and green initiatives to promote sustainability.
-            </p>
-          </div>
-
-          {/* Volunteer Experience 3 */}
-          <div className="volunteer-card">
-            <div className="volunteer-icon">
-              <FontAwesomeIcon icon={faHandsHelping} size="2x" />
-            </div>
-            <h3>Youth Mentoring</h3>
-            <p>
-              Mentored high school students on career planning and personal development.
-            </p>
-          </div>
-
-          {/* Volunteer Experience 4 */}
-          <div className="volunteer-card">
-            <div className="volunteer-icon">
-              <FontAwesomeIcon icon={faHandsHelping} size="2x" />
-            </div>
-            <h3>Art & Culture Programs</h3>
-            <p>
-              Assisted in organizing cultural events and workshops in local community centers.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>
