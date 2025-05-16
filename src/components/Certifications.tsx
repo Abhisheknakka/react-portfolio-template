@@ -5,6 +5,7 @@ import "../assets/styles/Certifications.scss";
 import azureAiCert from "../assets/images/azure-ai-engineer.png";  // <- Azure AI badge
 import dbtFundamentalsCert from "../assets/images/dbt-fundamentals.png"; // <- dbt badge
 import databricksFundamentalsCert from "../assets/images/lakehouse-fundamentals.png"; // <- dbt badge
+import databricksdataengineerassociate from "../assets/images/associate-badge-de.png"; // <- dbt badge
 
 function Certifications() {
     return (
@@ -12,6 +13,18 @@ function Certifications() {
             <div className="certifications-container">
                 <h1>Certifications & Achievements</h1>
                 <div className="skills-grid">
+                    <div className="skill">
+                        <a href="" target="_blank" rel="noreferrer">
+                            <img src={databricksdataengineerassociate} alt="Databricks Data Engineer Associate" className="cert-icon" />
+                        </a>
+                        <h3>
+                            <a href="https://learn.microsoft.com/en-us/users/abhisheknakka-4994/credentials/97cc0b46ce4b7929?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noreferrer">
+                                Databricks Data Engineer Associate
+                            </a>
+                        </h3>
+                        <p>Validated proficiency in building data pipelines using Databricks, including data ingestion, transformation, and writing production-quality code in PySpark. Good understanding of Lakehouse architecture, Delta Lake, and managing workflows with Delta Live tables and good understanding on handling Streaming data.</p>
+                    </div>
+                    
                     <div className="skill">
                         <a href="https://learn.microsoft.com/en-us/users/abhisheknakka-4994/credentials/97cc0b46ce4b7929?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noreferrer">
                             <img src={azureAiCert} alt="Azure AI Engineer Certification" className="cert-icon" />
