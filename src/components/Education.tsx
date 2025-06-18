@@ -13,7 +13,7 @@ function Education() {
                         <FontAwesomeIcon icon={faGraduationCap} size="3x" />
                         <h3>Master of Science in Big Data Analytics</h3>
                         <p><strong>Trent University, Canada</strong><br />
-                        Graduation: April 2025</p>
+                        Graduation: June 2025</p>
                         <p>Focused on Data engineering, Cloud Platforms, Advanced Visualization Techniques.</p>
                     </div>
 

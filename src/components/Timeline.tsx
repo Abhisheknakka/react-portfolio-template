@@ -61,7 +61,7 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Integrations Analyst</h3>
+            <h3 className="vertical-timeline-element-title">Intern</h3>
             <h4 className="vertical-timeline-element-subtitle">
               <a href="https://www.darwinbox.com/" target="_blank" rel="noreferrer">
                 <img

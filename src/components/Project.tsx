@@ -4,6 +4,7 @@ import project1 from '../assets/images/project-1.png';
 import project2 from '../assets/images/project-2.png';
 import project3 from '../assets/images/project-3.jpeg';
 import project4 from '../assets/images/project-4.png';
+import project5 from '../assets/images/project-5.png';
 
 import '../assets/styles/Project.scss';
 
@@ -21,11 +22,21 @@ function Project() {
                             
                         <p>Partnered with Children's  Aid Socity of Toronto (CAST) and Trent University to identify racial disproportionality in child protection investigations across Toronto. Integrated over 150K CAST records with demographic and crime datasets, and built interactive maps and plots to uncover systemic biases. Tools used: Pandas, Folium, GeoJSON.</p>
             </div>
+            
+            <div className="project">
+                <a href="" target="_blank" rel="noreferrer"><img src={project5} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="" target="_blank" rel="noreferrer"><h2>Driver and Delivery Performance in a logisitics Company</h2></a>
+                <p>Developed an interactive Power BI dashboard for a Logistics Company to track driver performance, delivery efficiency, and SLA compliance across 17K+ deliveries. Enabled data-driven insights into route optimization, return trends, and city-level delivery success.</p>
+            </div>
+
             <div className="project">
                 <a href="https://github.com/Abhisheknakka/AI-Restaurent-Chat-bot" target="_blank" rel="noreferrer"><img src={project4} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/Abhisheknakka/AI-Restaurent-Chat-bot" target="_blank" rel="noreferrer"><h2>Food AI – AI Driven Restaurant Menu Chatbot</h2></a>
                 <p>Built an RAG chatbot for a restaurant using GPT-4 and Elasticsearch, providing dish details while engineering a data pipeline to create a gold-standard dataset for model fine-tuning.</p>
             </div>
+
+           
+
             <div className="project">
                 <a href="https://github.com/Abhisheknakka/azure-etl-pipeline" target="_blank" rel="noreferrer"><img src={project3} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/Abhisheknakka/azure-etl-pipeline" target="_blank" rel="noreferrer"><h2>Health Analytics – Optimized Health Data Pipeline</h2></a>
