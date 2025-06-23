@@ -30,9 +30,13 @@ function Main() {
           {/* === Resume and Contact Block === */}
           <div className="resume-box">
             <div className="resume-contact compact">
+              {/*
+              remove after shyftlabs
               <a className="resume-link" href="https://drive.google.com/file/d/1zm0PkFEU0SkFRYxCumxbj2lvON1QeFi6/view?usp=sharing" target="_blank" rel="noreferrer">
                 📄 Resume
               </a>
+              */}
+
               {/* 
               <a className="email-link" href="mailto:nakka.abhishek99@gmail.com">
                 📧 nakka.abhishek99@gmail.com

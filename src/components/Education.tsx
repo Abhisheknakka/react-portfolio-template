@@ -9,6 +9,8 @@ function Education() {
             <div className="skills-container">
                 <h1>Education</h1>
                 <div className="skills-grid">
+                    
+                    {/*
                     <div className="skill">
                         <FontAwesomeIcon icon={faGraduationCap} size="3x" />
                         <h3>Master of Science in Big Data Analytics</h3>
@@ -16,7 +18,8 @@ function Education() {
                         Graduation: June 2025</p>
                         <p>Focused on Data engineering, Cloud Platforms, Advanced Visualization Techniques.</p>
                     </div>
-
+                    */
+                    }
                     <div className="skill">
                         <FontAwesomeIcon icon={faGraduationCap} size="3x" />
                         <h3>Bachelor of Technology in Electronics (IoT)</h3>
