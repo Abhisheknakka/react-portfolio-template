@@ -1,0 +1,205 @@
+// Matrix Theme Styles - Override main styles
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+// Matrix color scheme
+$matrix-green: #00ff41;
+$matrix-cyan: #00ffff;
+$matrix-dark: #000000;
+$matrix-overlay: rgba(0, 0, 0, 0.85);
+
+// Global Matrix styles
+body {
+  background: $matrix-dark;
+  color: $matrix-green;
+  font-family: 'Share Tech Mono', monospace;
+  overflow-x: hidden;
+}
+
+.matrix-container {
+  position: relative;
+  min-height: 100vh;
+  background: $matrix-dark;
+  
+  * {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+// Navigation styling
+.navigation-bar {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border-bottom: 2px solid $matrix-green;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+  
+  button {
+    color: $matrix-green !important;
+    text-shadow: 0 0 10px $matrix-green;
+    font-family: 'Share Tech Mono', monospace;
+    
+    &:hover {
+      color: $matrix-cyan !important;
+      text-shadow: 0 0 15px $matrix-cyan;
+      background: rgba(0, 255, 65, 0.1);
+    }
+  }
+  
+  svg {
+    color: $matrix-green !important;
+    filter: drop-shadow(0 0 10px $matrix-green);
+    
+    &:hover {
+      color: $matrix-cyan !important;
+      filter: drop-shadow(0 0 15px $matrix-cyan);
+    }
+  }
+}
+
+// Content sections
+.items-container {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid $matrix-green;
+  box-shadow: 0 0 30px rgba(0, 255, 65, 0.2);
+  backdrop-filter: blur(10px);
+  
+  h1 {
+    color: $matrix-green;
+    text-shadow: 0 0 20px $matrix-green;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 3px;
+    position: relative;
+    
+    &::before {
+      content: '> ';
+      color: $matrix-green;
+    }
+    
+    &::after {
+      content: ' <';
+      color: $matrix-green;
+    }
+  }
+}
+
+// Cards and containers
+.skill, .project {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid $matrix-green;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    border-color: $matrix-cyan;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+    transform: translateY(-5px);
+  }
+  
+  h3 {
+    color: $matrix-green;
+    text-shadow: 0 0 10px $matrix-green;
+    
+    &::before {
+      content: '> ';
+    }
+  }
+  
+  p {
+    color: rgba(0, 255, 65, 0.8);
+  }
+}
+
+// Links
+a {
+  color: $matrix-green;
+  text-shadow: 0 0 5px $matrix-green;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    color: $matrix-cyan;
+    text-shadow: 0 0 15px $matrix-cyan;
+  }
+}
+
+// Timeline
+.vertical-timeline-element-content {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: 2px solid $matrix-green;
+  box-shadow: 0 0 25px rgba(0, 255, 65, 0.3);
+  
+  .vertical-timeline-element-title {
+    color: $matrix-green;
+    text-shadow: 0 0 10px $matrix-green;
+    
+    &::before {
+      content: '> ';
+    }
+  }
+}
+
+// Social icons
+.social_icons svg, .social-links svg {
+  color: $matrix-green;
+  filter: drop-shadow(0 0 10px $matrix-green);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    color: $matrix-cyan;
+    filter: drop-shadow(0 0 20px $matrix-cyan);
+    transform: scale(1.2);
+  }
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+  border: 1px solid $matrix-green;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $matrix-green;
+  box-shadow: 0 0 10px $matrix-green;
+  
+  &:hover {
+    background: $matrix-cyan;
+    box-shadow: 0 0 15px $matrix-cyan;
+  }
+}
+
+// Terminal prompt animation
+@keyframes terminal-typing {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+// Glitch effect
+@keyframes matrix-glitch {
+  0%, 100% { 
+    transform: translate(0);
+    filter: hue-rotate(0deg);
+  }
+  20% { 
+    transform: translate(-2px, 2px);
+    filter: hue-rotate(90deg);
+  }
+  40% { 
+    transform: translate(-2px, -2px);
+    filter: hue-rotate(180deg);
+  }
+  60% { 
+    transform: translate(2px, 2px);
+    filter: hue-rotate(270deg);
+  }
+  80% { 
+    transform: translate(2px, -2px);
+    filter: hue-rotate(360deg);
+  }
+}
+
+.matrix-container h1:hover {
+  animation: matrix-glitch 0.5s;
+}
+

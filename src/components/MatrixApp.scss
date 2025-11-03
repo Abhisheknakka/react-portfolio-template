@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.matrix-container {
+  position: relative;
+  min-height: 100vh;
+  background: #000;
+  overflow-x: hidden;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.matrix-overlay {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.terminal-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.95);
+  border-bottom: 2px solid #00ff41;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+.terminal-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.control {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  
+  &.red {
+    background: #ff5f56;
+  }
+  
+  &.yellow {
+    background: #ffbd2e;
+  }
+  
+  &.green {
+    background: #27c93f;
+  }
+}
+
+.terminal-title {
+  color: #00ff41;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #00ff41;
+}
+
+.glitch-cursor {
+  color: #00ff41;
+  font-size: 14px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.matrix-content {
+  padding-top: 80px;
+  position: relative;
+}
+
+.matrix-section {
+  margin: 40px 0;
+  padding: 20px;
+  border-left: 3px solid #00ff41;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.1);
+  
+  &::before {
+    content: '> ';
+    color: #00ff41;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+
+.terminal-prompt {
+  padding: 20px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 14px;
+  color: #00ff41;
+  text-shadow: 0 0 10px #00ff41;
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #00ff41;
+  margin-bottom: 20px;
+  
+  .prompt-user {
+    color: #00ff41;
+  }
+  
+  .prompt-symbol {
+    color: #00ff41;
+    margin: 0 5px;
+  }
+  
+  .prompt-path {
+    color: #00ffff;
+  }
+  
+  .cursor-blink {
+    animation: blink 1s infinite;
+    margin-left: 5px;
+    color: #00ff41;
+  }
+}
+
+// Matrix text styling
+.matrix-container {
+  h1, h2, h3, h4, h5, h6 {
+    color: #00ff41;
+    text-shadow: 0 0 10px #00ff41;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 2px;
+  }
+  
+  p, a, label, button, span {
+    color: #00ff41;
+    font-family: 'Share Tech Mono', monospace;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+  }
+  
+  a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 15px #00ffff;
+    transition: all 0.3s ease;
+  }
+}
+
+// Glitch effect for important elements
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+.matrix-container h1:hover {
+  animation: glitch 0.3s;
+  color: #00ffff;
+}
+

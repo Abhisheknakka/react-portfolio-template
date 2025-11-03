@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.scss';
 import App from './App';
+import MatrixApp from './components/MatrixApp';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -9,7 +9,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    {/* Switch between themes by changing the component below: */}
+    {/* Regular Portfolio: <App /> */}
     <App />
+    {/* Matrix Theme: <MatrixApp /> */}
+    {/* <MatrixApp /> */}
   </React.StrictMode>
 );
 
