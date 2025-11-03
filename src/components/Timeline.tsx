@@ -3,6 +3,7 @@ import '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import darwinboxLogo from "../assets/images/darwinbox_logo.png";
 import cognizantLogo from "../assets/images/cognizant_logo.png";
+import shyftlabsLogo from "../assets/images/shyftlabs_logo.png";
 // You'll need to import a logo for Phoenix Analytics.
 // If you don't have one, you can use a placeholder or find one.
 import phoenixAnalyticsLogo from "../assets/images/phoenix_analytics_logo.jpeg";
@@ -19,6 +20,40 @@ function Timeline() {
       <div className="items-container">
         <h1>Career History</h1>
         <VerticalTimeline>
+
+          {/* Shyftlabs - Data Engineer */}
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid  white' }}
+            date="Jul 2025 – Present"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Data Engineer</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              <a href="https://shyftlabs.io/" target="_blank" rel="noreferrer">
+                <img
+                  src={shyftlabsLogo}
+                  alt="Shyftlabs Logo"
+                  style={{ width: "80px", verticalAlign: "middle", marginRight: "10px" }}
+                />
+              </a>
+              <a
+                href="https://shyftlabs.io/"
+                target="_blank"
+                rel="noreferrer"
+                className="visible-link"
+              >
+                Shyftlabs
+              </a>
+            </h4>
+            <p>
+              Designing and developing ETL pipelines using modern data engineering technologies including PostgreSQL, Databricks, BigQuery, and Snowflake.
+              Orchestrating workflows with Apache Airflow and deploying scripts on EC2 machines.
+              Following best practices for version control with GitHub and project management with Jira.
+            </p>
+          </VerticalTimelineElement>
 
           {/* Darwinbox - Technical Analyst */}
           <VerticalTimelineElement
