@@ -1,15 +1,51 @@
 footer {
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, transparent 0%, rgba(164, 74, 201, 0.05) 100%);
+    border-top: 1px solid rgba(164, 74, 201, 0.2);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #a64ac9, transparent);
+    }
 
     svg {
         width: 1.1em !important;
         height: 1.1em !important;
         margin-right: 10px;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.1);
+            color: #a64ac9;
+        }
     }
 
     p {
-        font-size: 0.8em;
+        font-size: 0.95em;
+        color: rgba(255, 255, 255, 0.7);
+        margin: 10px 0;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            color: rgba(255, 255, 255, 0.9);
+        }
+    }
+    
+    a {
+        color: #a64ac9;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            color: #6200ea;
+            text-decoration: underline;
+        }
     }
 }

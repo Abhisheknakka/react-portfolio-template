@@ -15,6 +15,19 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(80, 0, 202, 0.1) 0%, rgba(164, 74, 201, 0.1) 100%);
+        z-index: 1;
+    }
 }
 
 .about-section .content {
@@ -24,11 +37,31 @@
     .social_icons {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 15px;
         color: white;
+        margin-bottom: 20px;
+
+        a {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            
+            &:hover {
+                transform: translateY(-5px);
+                background: linear-gradient(135deg, #a64ac9, #6200ea);
+                box-shadow: 0 10px 25px rgba(164, 74, 201, 0.4);
+            }
+        }
 
         svg {
-            font-size: 1.8em;
+            font-size: 1.5em;
         }
     }
 
@@ -38,23 +71,94 @@
 
     p {
         font-size: 1.5em;
-        margin-block-start: 0px;
-        margin-block-end: 0px;
+        margin-block-start: 10px;
+        margin-block-end: 10px;
+        background: linear-gradient(135deg, #ffffff, #e0e0e0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 500;
+        animation: fadeInUp 0.8s ease-out 0.2s both;
     }
 
     h1 {
         font-size: 5em;
         margin-block-start: 0px;
         margin-block-end: 0px;
+        background: linear-gradient(135deg, #a64ac9, #6200ea, #00d4ff);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: gradient-animation 3s ease infinite, fadeInUp 0.8s ease-out both;
+        font-weight: 700;
     }
 }
 
 .about-section .image-wrapper {
     z-index: 2;
+    position: relative;
+    animation: fadeInScale 1s ease-out both;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        background: linear-gradient(135deg, #a64ac9, #6200ea, #00d4ff);
+        border-radius: 50%;
+        z-index: -1;
+        animation: rotate 3s linear infinite;
+    }
+    
     img {
         width: 150px;
+        height: 150px;
         border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
     }
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .about p {
@@ -125,11 +229,30 @@
             padding-top: 10px;
             display: flex !important;
             flex-direction: row;
-            gap: 10px;
+            gap: 15px;
             color: white;
+            
+            a {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                transition: all 0.3s ease;
+                
+                &:hover {
+                    transform: translateY(-5px);
+                    background: linear-gradient(135deg, #a64ac9, #6200ea);
+                    box-shadow: 0 10px 25px rgba(164, 74, 201, 0.4);
+                }
+            }
     
             svg {
-                font-size: 1.8em;
+                font-size: 1.5em;
             }
         }
 

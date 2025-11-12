@@ -5,69 +5,146 @@
     text-align: left;
 
     h1 {
-        color: white;
-        font-size: 2rem;
-        font-weight: 600;
+        font-size: 3em;
         margin-bottom: 40px;
+        background: linear-gradient(135deg, #a64ac9, #6200ea);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 700;
+        text-align: center;
     }
 }
 
 .certifications-container .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    grid-gap: 40px;
 }
 
 .certifications-container .skill {
-    background-color: #1a1a1a;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
-    text-align: left;
-}
-
-.certifications-container .skill:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(164, 74, 201, 0.15), rgba(98, 0, 234, 0.15));
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+    
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 60px rgba(164, 74, 201, 0.3);
+        border-color: rgba(164, 74, 201, 0.5);
+        
+        &::before {
+            opacity: 1;
+        }
+        
+        .cert-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        h3 {
+            background: linear-gradient(135deg, #00d4ff, #a64ac9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        svg {
+            transform: scale(1.1) rotate(5deg);
+            color: #a64ac9;
+        }
+    }
 }
 
 .certifications-container .skill h3 {
     color: white;
-    margin-top: 10px;
-    font-size: 1.2rem;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .certifications-container .skill p {
-    color: #ccc;
-    font-size: 0.9rem;
-    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 .certifications-container svg {
-    color: #8ab4f8;
+    color: #a64ac9;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .cert-icon {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
     margin-bottom: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 
 @media (max-width: 768px) {
     .certifications-container {
         display: block;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding: 10% 5%;
+        
+        h1 {
+            font-size: 2.2em;
+        }
     }
 
     .certifications-container .skills-grid {
         grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    
+    .certifications-container .skill {
+        padding: 25px;
+        
+        h3 {
+            font-size: 1.2rem;
+        }
+        
+        p {
+            font-size: 0.95rem;
+        }
+    }
+    
+    .cert-icon {
+        width: 70px;
+        height: 70px;
     }
 }

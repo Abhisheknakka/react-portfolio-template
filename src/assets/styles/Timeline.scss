@@ -1,3 +1,12 @@
+.vertical-timeline {
+    padding: 5% 0;
+    
+    &::before {
+        background: linear-gradient(180deg, rgba(164, 74, 201, 0.3), rgba(98, 0, 234, 0.3));
+        box-shadow: 0 0 10px rgba(164, 74, 201, 0.3);
+    }
+}
+
 .vertical-timeline span {
     color: white;
     font-family: 'Courier Prime', monospace;
@@ -5,26 +14,59 @@
 
 .vertical-timeline p {
     color: rgb(39, 40, 34);
+    line-height: 1.7;
 }
 
-.vertical-timeline-element p {
-    color: rgb(39, 40, 34);
+.vertical-timeline-element {
+    p {
+        color: rgb(39, 40, 34);
+        font-size: 1em;
+        line-height: 1.7;
+    }
+    
+    h3 {
+        color: rgb(39, 40, 34);
+        font-weight: 600;
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+    
+    h4 {
+        color: rgb(39, 40, 34);
+        font-weight: 500;
+        font-size: 1.1em;
+        opacity: 0.9;
+    }
+    
+    span {
+        color: rgb(39, 40, 34);
+    }
 }
 
-.vertical-timeline-element h3 {
-    color: rgb(39, 40, 34);
+.vertical-timeline-element-content {
+    box-shadow: 0 10px 30px rgba(164, 74, 201, 0.15);
+    border: 1px solid rgba(164, 74, 201, 0.1);
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(164, 74, 201, 0.25);
+    }
 }
 
-.vertical-timeline-element h4 {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element span {
-    color: rgb(39, 40, 34);
+.vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px rgba(164, 74, 201, 0.2), 0 10px 20px rgba(164, 74, 201, 0.3);
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: scale(1.1) rotate(5deg);
+    }
 }
 
 .vertical-timeline-element .vertical-timeline-element-date {
     color: white;
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .svg-inline--fa {
@@ -38,16 +80,18 @@
 }
 
 .visible-link {
-    visibility: visible;   /* Ensure the text is always visible */
-    opacity: 1;            /* Make sure the text is not transparent */
-    display: inline;       /* Ensure it's inline */
-    color: #5000ca;        /* Initial color */
-    text-decoration: none; /* Remove underline (if you don't want it) */
-    transition: color 0.3s; /* Smooth transition for color change */
+    visibility: visible;
+    opacity: 1;
+    display: inline;
+    color: #a64ac9;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
   }
   
   .visible-link:hover {
-    color: #ff5733;        /* Color when hovered (you can choose any color) */
-    text-decoration: underline; /* Optional: Add underline on hover */
+    color: #6200ea;
+    text-decoration: underline;
+    transform: translateX(3px);
   }
   
