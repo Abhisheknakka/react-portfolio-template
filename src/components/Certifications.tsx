@@ -21,20 +21,18 @@ function Certifications() {
                 <div className="skills-grid">
                     {/* 1. Databricks Data Engineer Professional */}
                     <div className="skill">
-                        <a href="" target="_blank" rel="noreferrer">
+                        <div>
                             <img src={databricksProfessionalPlaceholder} alt="Databricks Data Engineer Professional" className="cert-icon" />
-                        </a>
+                        </div>
                         <h3>
-                            <a href="" target="_blank" rel="noreferrer">
-                                Databricks Data Engineer Professional
-                            </a>
+                            Databricks Data Engineer Professional
                         </h3>
                         <p>Advanced certification demonstrating expertise in building and managing complex data engineering solutions on the Databricks platform.</p>
                     </div>
 
                     {/* 2. Databricks Data Engineer Associate */}
                     <div className="skill">
-                        <a href="" target="_blank" rel="noreferrer">
+                        <a href="https://learn.microsoft.com/en-us/users/abhisheknakka-4994/credentials/97cc0b46ce4b7929?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noreferrer">
                             <img src={databricksdataengineerassociate} alt="Databricks Data Engineer Associate" className="cert-icon" />
                         </a>
                         <h3>
@@ -47,13 +45,11 @@ function Certifications() {
 
                     {/* 3. Apache Airflow® Fundamentals Certification */}
                     <div className="skill">
-                        <a href="" target="_blank" rel="noreferrer">
+                        <div>
                             <img src={airflowFundamentalsPlaceholder} alt="Apache Airflow Fundamentals Certification" className="cert-icon" />
-                        </a>
+                        </div>
                         <h3>
-                            <a href="" target="_blank" rel="noreferrer">
-                                Apache Airflow® Fundamentals Certification
-                            </a>
+                            Apache Airflow® Fundamentals Certification
                         </h3>
                         <p>The Astronomer Certification for Apache Airflow® Fundamentals exam assesses an understanding of the basics of the Airflow architecture and the ability to create basic data pipelines for scheduling and monitoring tasks.</p>
                    
@@ -61,13 +57,11 @@ function Certifications() {
 
                     {/* 4. Apache Airflow® DAG Authoring Certification */}
                     <div className="skill">
-                        <a href="" target="_blank" rel="noreferrer">
+                        <div>
                             <img src={airflowDagAuthoringPlaceholder} alt="Apache Airflow DAG Authoring Certification" className="cert-icon" />
-                        </a>
+                        </div>
                         <h3>
-                            <a href="" target="_blank" rel="noreferrer">
-                                Apache Airflow® DAG Authoring Certification
-                            </a>
+                            Apache Airflow® DAG Authoring Certification
                         </h3>
                         <p>The Astronomer Certification for DAG Authoring exam assesses your knowledge of designing and creating reliable data pipelines following best practices.</p>
                     </div>
@@ -86,13 +80,11 @@ function Certifications() {
                     </div>
 
                     <div className="skill">
-                        <a href="" target="_blank" rel="noreferrer">
+                        <div>
                             <img src={databricksFundamentalsCert} alt="Dtabricks Lakehouse Certification" className="cert-icon" />
-                        </a>
+                        </div>
                         <h3>
-                            <a href="" target="_blank" rel="noreferrer">
-                                Databricks Lakehouse Certification
-                            </a>
+                            Databricks Lakehouse Certification
                         </h3>
                         <p>Mastered core concepts of the Lakehouse architecture, including Delta Lake, Unity Catalog, and Databricks' approach to unifying data engineering, analytics, and machine learning on a single platform.</p>
                     </div>

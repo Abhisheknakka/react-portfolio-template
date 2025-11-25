@@ -14,9 +14,9 @@ function Project() {
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                        <a href="" target="_blank" rel="noreferrer">
+                        <div>
                             <img src={project0} className="zoom" alt="thumbnail" width="100%" />
-                        </a>
+                        </div>
                         
                             <h2>Child Welfare Disparities – Racial Disproportionality Analysis for CAST</h2>
                             
@@ -24,8 +24,8 @@ function Project() {
             </div>
             
             <div className="project">
-                <a href="" target="_blank" rel="noreferrer"><img src={project5} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="" target="_blank" rel="noreferrer"><h2>Driver and Delivery Performance in a logisitics Company</h2></a>
+                <div><img src={project5} className="zoom" alt="thumbnail" width="100%"/></div>
+                <h2>Driver and Delivery Performance in a logisitics Company</h2>
                 <p>Developed an interactive Power BI dashboard for a Logistics Company to track driver performance, delivery efficiency, and SLA compliance across 17K+ deliveries. Enabled data-driven insights into route optimization, return trends, and city-level delivery success.</p>
             </div>
 
