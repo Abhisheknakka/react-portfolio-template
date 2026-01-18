@@ -9,6 +9,7 @@ import databricksdataengineerassociate from "../assets/images/associate-badge-de
 
 // Placeholder images for new certifications (to be updated)
 // TODO: Replace these with actual certification badge images
+import databricksGenerativeAiAssociate from "../assets/images/associate-badge-gen-ai.png"; // <- Databricks Generative AI Engineer Associate badge
 import databricksProfessionalPlaceholder from "../assets/images/professional-badge-de.png"; // <- Replace with databricks-professional-placeholder.png
 import airflowFundamentalsPlaceholder from "../assets/images/airflow-fundamentals.png"; // <- Replace with airflow-fundamentals-placeholder.png
 import airflowDagAuthoringPlaceholder from "../assets/images/airflow-dagauthorizing.png"; // <- Replace with airflow-dag-authoring-placeholder.png
@@ -19,7 +20,18 @@ function Certifications() {
             <div className="certifications-container">
                 <h1>Certifications & Achievements</h1>
                 <div className="skills-grid">
-                    {/* 1. Databricks Data Engineer Professional */}
+                    {/* 1. Databricks Certified Generative AI Engineer Associate - Latest */}
+                    <div className="skill">
+                        <div>
+                            <img src={databricksGenerativeAiAssociate} alt="Databricks Certified Generative AI Engineer Associate" className="cert-icon" />
+                        </div>
+                        <h3>
+                            Databricks Certified Generative AI Engineer Associate
+                        </h3>
+                        <p>Validates expertise in building and deploying generative AI applications on the Databricks platform. Demonstrates proficiency in working with large language models, vector databases, RAG (Retrieval-Augmented Generation) architectures, and productionizing generative AI solutions.</p>
+                    </div>
+
+                    {/* 2. Databricks Data Engineer Professional */}
                     <div className="skill">
                         <div>
                             <img src={databricksProfessionalPlaceholder} alt="Databricks Data Engineer Professional" className="cert-icon" />
@@ -27,10 +39,10 @@ function Certifications() {
                         <h3>
                             Databricks Data Engineer Professional
                         </h3>
-                        <p>Advanced certification demonstrating expertise in building and managing complex data engineering solutions on the Databricks platform.</p>
+                        <p>Advanced certification demonstrating expertise in building and managing complex data engineering solutions on the Databricks platform. Validates deep knowledge of advanced data engineering patterns, optimization techniques, and production-grade implementations.</p>
                     </div>
 
-                    {/* 2. Databricks Data Engineer Associate */}
+                    {/* 3. Databricks Data Engineer Associate */}
                     <div className="skill">
                         <a href="https://learn.microsoft.com/en-us/users/abhisheknakka-4994/credentials/97cc0b46ce4b7929?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noreferrer">
                             <img src={databricksdataengineerassociate} alt="Databricks Data Engineer Associate" className="cert-icon" />
@@ -43,7 +55,7 @@ function Certifications() {
                         <p>Validated proficiency in building data pipelines using Databricks, including data ingestion, transformation, and writing production-quality code in PySpark. Good understanding of Lakehouse architecture, Delta Lake, and managing workflows with Delta Live tables and good understanding on handling Streaming data.</p>
                     </div>
 
-                    {/* 3. Apache Airflow® Fundamentals Certification */}
+                    {/* 4. Apache Airflow® Fundamentals Certification */}
                     <div className="skill">
                         <div>
                             <img src={airflowFundamentalsPlaceholder} alt="Apache Airflow Fundamentals Certification" className="cert-icon" />
@@ -55,7 +67,7 @@ function Certifications() {
                    
                     </div>
 
-                    {/* 4. Apache Airflow® DAG Authoring Certification */}
+                    {/* 5. Apache Airflow® DAG Authoring Certification */}
                     <div className="skill">
                         <div>
                             <img src={airflowDagAuthoringPlaceholder} alt="Apache Airflow DAG Authoring Certification" className="cert-icon" />

@@ -7,6 +7,8 @@ import shyftlabsLogo from "../assets/images/shyftlabs_logo.png";
 // You'll need to import a logo for Phoenix Analytics.
 // If you don't have one, you can use a placeholder or find one.
 import phoenixAnalyticsLogo from "../assets/images/phoenix_analytics_logo.jpeg";
+import canadaFlag from "../assets/images/Flag_of_Canada_(Pantone).svg.png";
+import indiaFlag from "../assets/images/Flag_of_India.svg.png";
 
 
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
@@ -24,12 +26,15 @@ function Timeline() {
           {/* Shyftlabs - Data Engineer */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)', position: 'relative' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
             date="Jul 2025 – Present"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
+            <div className="country-flag">
+              <img src={canadaFlag} alt="Canada Flag" />
+            </div>
             <h3 className="vertical-timeline-element-title">Data Engineer</h3>
             <h4 className="vertical-timeline-element-subtitle">
               <a href="https://shyftlabs.io/" target="_blank" rel="noreferrer">
@@ -58,12 +63,15 @@ function Timeline() {
           {/* Darwinbox - Technical Analyst */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)', position: 'relative' }}
+            contentArrowStyle={{ borderRight: '7px solid  white' }}
             date="Mar 2022 – Dec 2023"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
+            <div className="country-flag">
+              <img src={indiaFlag} alt="India Flag" />
+            </div>
             <h3 className="vertical-timeline-element-title">Data Engineer - Integrations</h3>
             <h4 className="vertical-timeline-element-subtitle">
               <a href="https://www.darwinbox.com/" target="_blank" rel="noreferrer">
@@ -92,10 +100,14 @@ function Timeline() {
           {/* Darwinbox - Business Analyst Intern */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            contentStyle={{ position: 'relative' }}
             date="Jan 2022 – Mar 2022"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
+            <div className="country-flag">
+              <img src={indiaFlag} alt="India Flag" />
+            </div>
             <h3 className="vertical-timeline-element-title">Intern</h3>
             <h4 className="vertical-timeline-element-subtitle">
               <a href="https://www.darwinbox.com/" target="_blank" rel="noreferrer">
@@ -125,10 +137,14 @@ function Timeline() {
           {/* Cognizant - Jr. Data Engineer*/}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            contentStyle={{ position: 'relative' }}
             date="Jun 2021 – Dec 2022"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
+            <div className="country-flag">
+              <img src={indiaFlag} alt="India Flag" />
+            </div>
             <h3 className="vertical-timeline-element-title">Jr. Data Engineer</h3>
             <h4 className="vertical-timeline-element-subtitle">
               <a href="https://www.cognizant.com/" target="_blank" rel="noreferrer">
@@ -157,10 +173,14 @@ function Timeline() {
           {/* Phoenix Analytics - Business Intelligence Analyst */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            contentStyle={{ position: 'relative' }}
             date="Jan 2020 – May 2021"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
+            <div className="country-flag">
+              <img src={indiaFlag} alt="India Flag" />
+            </div>
             <h3 className="vertical-timeline-element-title"> Analyst </h3>
             <h4 className="vertical-timeline-element-subtitle">
               <a href="https://www.facebook.com/p/Phoenix-Analytics-100064112640425/?locale=ar_AR" target="_blank" rel="noreferrer">
