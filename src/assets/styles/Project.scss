@@ -85,6 +85,10 @@
         line-height: 1.7;
         color: rgba(255, 255, 255, 0.8);
     }
+
+    .light-mode & p {
+        color: rgba(13, 17, 22, 0.8);
+    }
 }
   
 .project h2:hover {

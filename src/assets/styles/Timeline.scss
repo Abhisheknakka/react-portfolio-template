@@ -12,6 +12,10 @@
     font-family: 'Courier Prime', monospace;
 }
 
+.light-mode .vertical-timeline span {
+    color: #0d1116;
+}
+
 .vertical-timeline p {
     color: rgb(39, 40, 34);
     line-height: 1.7;
@@ -103,8 +107,17 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.light-mode .vertical-timeline-element .vertical-timeline-element-date {
+    color: #5a5a5a;
+    text-shadow: none;
+}
+
 .svg-inline--fa {
     color: white;
+}
+
+.light-mode .svg-inline--fa {
+    color: #0d1116;
 }
 
 @media screen and (max-width: 1170px) {

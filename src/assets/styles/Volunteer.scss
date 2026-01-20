@@ -83,6 +83,10 @@
     font-weight: 600;
     color: white;
   }
+
+  .light-mode & h3 {
+    color: #0d1116;
+  }
   
   p {
     margin: 0 25px 25px;
@@ -91,6 +95,10 @@
     font-size: 1em;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.8);
+  }
+
+  .light-mode & p {
+    color: rgba(13, 17, 22, 0.8);
   }
 }
 

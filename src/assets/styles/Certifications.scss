@@ -83,6 +83,10 @@
     z-index: 1;
 }
 
+.light-mode .certifications-container .skill h3 {
+    color: #0d1116;
+}
+
 .certifications-container .skill p {
     color: rgba(255, 255, 255, 0.7);
     font-size: 1rem;
@@ -90,6 +94,10 @@
     margin-top: 10px;
     position: relative;
     z-index: 1;
+}
+
+.light-mode .certifications-container .skill p {
+    color: rgba(13, 17, 22, 0.8);
 }
 
 .certifications-container svg {
