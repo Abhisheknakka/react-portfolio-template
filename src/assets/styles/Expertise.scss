@@ -5,14 +5,23 @@
     text-align: left;
 
     h1 {
-        font-size: 3em;
-        margin-bottom: 40px;
-        background: linear-gradient(135deg, #a64ac9, #6200ea);
+        font-size: 3.2em;
+        margin-bottom: 50px;
+        background: linear-gradient(135deg, #00d4ff, #6366f1, #8b5cf6);
+        background-size: 200% 200%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        font-weight: 700;
+        font-weight: 800;
         text-align: center;
+        letter-spacing: -0.5px;
+        animation: gradient-animation 4s ease infinite;
+    }
+    
+    @keyframes gradient-animation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
     }
 
     svg {
@@ -30,14 +39,15 @@
 .skills-container .skills-grid .skill {
     align-items: center;
     text-align: left;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 35px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(255, 255, 255, 0.04);
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 212, 255, 0.15);
+    backdrop-filter: blur(20px) saturate(180%);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
     
     &::before {
         content: '';
@@ -46,27 +56,49 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(135deg, rgba(164, 74, 201, 0.15), rgba(98, 0, 234, 0.15));
+        background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.15));
         opacity: 0;
-        transition: opacity 0.4s ease;
+        transition: opacity 0.5s ease;
+        z-index: 0;
+    }
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        z-index: 0;
     }
     
     &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 60px rgba(164, 74, 201, 0.3);
-        border-color: rgba(164, 74, 201, 0.5);
+        transform: translateY(-12px) scale(1.02);
+        box-shadow: 
+            0 24px 80px rgba(0, 212, 255, 0.25),
+            0 0 0 1px rgba(0, 212, 255, 0.3) inset,
+            0 0 60px rgba(0, 212, 255, 0.15);
+        border-color: rgba(0, 212, 255, 0.4);
         
         &::before {
             opacity: 1;
         }
         
+        &::after {
+            opacity: 1;
+        }
+        
         svg {
-            transform: scale(1.1) rotate(5deg);
-            color: #a64ac9;
+            transform: scale(1.15) rotate(8deg);
+            color: #00d4ff;
+            filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.5));
         }
         
         h3 {
-            background: linear-gradient(135deg, #00d4ff, #a64ac9);
+            background: linear-gradient(135deg, #00d4ff, #6366f1);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -74,12 +106,13 @@
     }
     
     h3 {
-        font-size: 1.5em;
-        margin: 20px 0 15px;
-        font-weight: 600;
-        transition: all 0.3s ease;
+        font-size: 1.6em;
+        margin: 24px 0 18px;
+        font-weight: 700;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
         z-index: 1;
+        letter-spacing: -0.3px;
     }
     
     p {
@@ -99,27 +132,30 @@
   
 .chip {
     color: white !important;
-    background: linear-gradient(135deg, rgba(164, 74, 201, 0.2), rgba(98, 0, 234, 0.2)) !important;
-    border: 1px solid rgba(164, 74, 201, 0.4) !important;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.18), rgba(99, 102, 241, 0.18)) !important;
+    border: 1px solid rgba(0, 212, 255, 0.35) !important;
     font-size: 0.85rem !important;
-    height: 30px !important;
-    transition: all 0.3s ease !important;
-    backdrop-filter: blur(5px) !important;
+    height: 32px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    backdrop-filter: blur(10px) saturate(180%) !important;
+    border-radius: 8px !important;
   
     span {
-        font-family: 'Courier Prime', monospace;
+        font-family: 'Inter', 'Courier Prime', monospace;
         color: white !important;
         font-weight: 500;
+        letter-spacing: 0.3px;
     }
   
     svg {
-        height: 15px !important;
+        height: 16px !important;
     }
     
     &:hover {
-        background: linear-gradient(135deg, rgba(164, 74, 201, 0.4), rgba(98, 0, 234, 0.4)) !important;
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(164, 74, 201, 0.3);
+        background: linear-gradient(135deg, rgba(0, 212, 255, 0.35), rgba(99, 102, 241, 0.35)) !important;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+        border-color: rgba(0, 212, 255, 0.5) !important;
     }
 }
 

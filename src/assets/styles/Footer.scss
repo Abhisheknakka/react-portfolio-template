@@ -1,9 +1,10 @@
 footer {
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(180deg, transparent 0%, rgba(164, 74, 201, 0.05) 100%);
-    border-top: 1px solid rgba(164, 74, 201, 0.2);
+    padding: 70px 20px;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 212, 255, 0.03) 50%, rgba(99, 102, 241, 0.05) 100%);
+    border-top: 1px solid rgba(0, 212, 255, 0.15);
     position: relative;
+    backdrop-filter: blur(10px);
 
     &::before {
         content: '';
@@ -11,20 +12,33 @@ footer {
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 200px;
-        height: 1px;
-        background: linear-gradient(90deg, transparent, #a64ac9, transparent);
+        width: 300px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #00d4ff, #6366f1, #00d4ff, transparent);
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    }
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.03) 0%, transparent 50%);
+        pointer-events: none;
     }
 
     svg {
         width: 1.1em !important;
         height: 1.1em !important;
         margin-right: 10px;
-        transition: all 0.3s ease;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         
         &:hover {
-            transform: scale(1.1);
-            color: #a64ac9;
+            transform: scale(1.2) rotate(10deg);
+            color: #00d4ff;
+            filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.6));
         }
     }
 
@@ -40,12 +54,28 @@ footer {
     }
     
     a {
-        color: #a64ac9;
-        transition: all 0.3s ease;
+        color: #00d4ff;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        font-weight: 500;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #00d4ff, #6366f1);
+            transition: width 0.3s ease;
+        }
         
         &:hover {
-            color: #6200ea;
-            text-decoration: underline;
+            color: #6366f1;
+            
+            &::after {
+                width: 100%;
+            }
         }
     }
 }
