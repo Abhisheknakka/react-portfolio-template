@@ -3,213 +3,73 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-  
+
     h1 {
-      font-size: 3.2em;
-      margin-bottom: 50px;
-      background: linear-gradient(135deg, #00d4ff, #6366f1, #8b5cf6);
-      background-size: 200% 200%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      font-weight: 800;
-      text-align: center;
-      letter-spacing: -0.5px;
-      animation: gradient-animation 4s ease infinite;
+        font-size: 3em;
+        margin-bottom: 52px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: -0.5px;
     }
-    
-    @keyframes gradient-animation {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-  }
+}
 
-  // Country flag badge styles
-  .skills-container .skills-grid .skill {
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 28px;
+}
+
+/* Country flag in education cards (uses .skill class) */
+.skills-container .skills-grid .skill {
     .country-flag {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(10px);
-      border: 2px solid rgba(0, 212, 255, 0.3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 10;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 212, 255, 0.2) inset;
-      overflow: hidden;
-      backdrop-filter: blur(10px);
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
-      }
+        background: rgba(255, 255, 255, 0.90);
+        border: 2px solid rgba(200, 169, 106, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.20);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
     }
 
     &:hover .country-flag {
-      transform: scale(1.15) rotate(8deg);
-      background: rgba(255, 255, 255, 0.3);
-      border-color: rgba(0, 212, 255, 0.6);
-      box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4), 0 0 0 1px rgba(0, 212, 255, 0.4) inset;
+        transform: scale(1.10);
+        border-color: rgba(200, 169, 106, 0.50);
     }
-  }
-  
-  .education-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
-  }
-  
-  .education-item {
-    align-items: center;
-    text-align: left;
-    background: rgba(255, 255, 255, 0.04);
-    padding: 35px;
-    border-radius: 24px;
-    border: 1px solid rgba(0, 212, 255, 0.15);
-    backdrop-filter: blur(20px) saturate(180%);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 2px 0 rgba(0, 212, 255, 0.12);
-    
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(135deg, rgba(0, 212, 255, 0.12), rgba(99, 102, 241, 0.12));
-      opacity: 0;
-      transition: opacity 0.5s ease;
-      z-index: 0;
-    }
-    
-    &::after {
-      content: '';
-      position: absolute;
-      top: -50%;
-      right: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
-      opacity: 0;
-      transition: opacity 0.5s ease;
-      z-index: 0;
-    }
-    
-    &:hover {
-      transform: translateY(-12px) scale(1.02);
-      box-shadow:
-        0 24px 80px rgba(0, 212, 255, 0.25),
-        0 0 0 1px rgba(0, 212, 255, 0.3) inset,
-        0 0 60px rgba(0, 212, 255, 0.15),
-        inset 0 2px 0 rgba(0, 212, 255, 0.6);
-      border-color: rgba(0, 212, 255, 0.4);
-      
-      &::before {
-        opacity: 1;
-      }
-      
-      &::after {
-        opacity: 1;
-      }
-      
-      h2 {
-        background: linear-gradient(135deg, #00d4ff, #6366f1);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-    }
-  }
-  
-  .education-item h2 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: white;
-    transition: all 0.3s ease;
-    position: relative;
-    z-index: 1;
-  }
+}
 
-  .light-mode .education-item h2 {
-    color: #0d1116;
-  }
-  
-  .education-item h3 {
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 8px;
-    position: relative;
-    z-index: 1;
-    font-weight: 500;
-  }
-
-  .light-mode .education-item h3 {
-    color: rgba(13, 17, 22, 0.8);
-  }
-  
-  .education-item p {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.7;
-    position: relative;
-    z-index: 1;
-  }
-
-  .light-mode .education-item p {
-    color: rgba(13, 17, 22, 0.7);
-  }
-  
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .education-container {
-      display: block;
-      padding: 10% 5%;
-      
-      h1 {
-        font-size: 2.2em;
-      }
+        display: block;
+        padding: 10% 5%;
+
+        h1 { font-size: 2.2em; }
     }
-  
+
     .education-grid {
-      display: initial;
-    }
-  
-    .education-item {
-      margin-bottom: 30px;
-      padding: 25px;
-      
-      h2 {
-        font-size: 1.2rem;
-      }
-      
-      h3 {
-        font-size: 1rem;
-      }
-      
-      p {
-        font-size: 0.95rem;
-      }
+        display: initial;
     }
 
     .skills-container .skills-grid .skill {
-      .country-flag {
-        width: 40px;
-        height: 40px;
-        top: 12px;
-        right: 12px;
-      }
+        .country-flag {
+            width: 36px;
+            height: 36px;
+            top: 12px;
+            right: 12px;
+        }
     }
-  }
-  
+}

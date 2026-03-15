@@ -1,132 +1,116 @@
 .vertical-timeline {
-    padding: 5% 0;
-    
+    padding: 3% 0;
+
     &::before {
-        background: linear-gradient(180deg, rgba(0, 212, 255, 0.4), rgba(99, 102, 241, 0.4), rgba(139, 92, 246, 0.4));
-        box-shadow: 
-            0 0 20px rgba(0, 212, 255, 0.3),
-            0 0 40px rgba(99, 102, 241, 0.2);
-        width: 3px;
+        background: linear-gradient(
+            180deg,
+            rgba(200, 169, 106, 0.15) 0%,
+            rgba(200, 169, 106, 0.30) 40%,
+            rgba(200, 169, 106, 0.30) 60%,
+            rgba(200, 169, 106, 0.15) 100%
+        );
+        width: 2px;
     }
 }
 
 .vertical-timeline span {
-    color: white;
-    font-family: 'Courier Prime', monospace;
+    color: rgba(240, 236, 228, 0.85);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92em;
+    font-weight: 500;
+    letter-spacing: 0.2px;
 }
 
 .light-mode .vertical-timeline span {
-    color: #0d1116;
+    color: #4a4238;
 }
 
 .vertical-timeline p {
-    color: rgba(255, 255, 255, 0.85);
-    line-height: 1.7;
+    color: rgba(240, 236, 228, 0.80);
+    line-height: 1.75;
 }
 
 .light-mode .vertical-timeline p {
-    color: rgba(13, 17, 22, 0.8);
+    color: rgba(26, 24, 20, 0.75);
 }
 
 .vertical-timeline-element {
     p {
-        color: rgba(255, 255, 255, 0.85);
-        font-size: 1em;
-        line-height: 1.7;
+        color: rgba(240, 236, 228, 0.80);
+        font-size: 0.97em;
+        line-height: 1.75;
     }
 
     h3 {
-        color: white;
+        color: #f0ece4;
         font-weight: 600;
-        font-size: 1.4em;
-        margin-bottom: 10px;
+        font-size: 1.35em;
+        margin-bottom: 8px;
+        letter-spacing: -0.2px;
     }
 
     h4 {
-        color: rgba(255, 255, 255, 0.75);
+        color: rgba(240, 236, 228, 0.72);
         font-weight: 500;
-        font-size: 1.1em;
-        opacity: 0.9;
+        font-size: 1.05em;
+        margin-bottom: 12px;
     }
 
     span {
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(240, 236, 228, 0.85);
     }
 }
 
 .light-mode .vertical-timeline-element {
     p {
-        color: rgba(13, 17, 22, 0.8);
+        color: rgba(26, 24, 20, 0.75);
     }
 
     h3 {
-        color: #0d1116;
+        color: #1a1814;
     }
 
     h4 {
-        color: rgba(13, 17, 22, 0.7);
+        color: rgba(26, 24, 20, 0.65);
     }
 
     span {
-        color: #0d1116;
+        color: #4a4238;
     }
 }
 
 .vertical-timeline-element-content {
-    box-shadow:
-        0 12px 40px rgba(0, 0, 0, 0.2),
-        0 0 0 1px rgba(0, 212, 255, 0.15) inset,
-        inset 0 2px 0 rgba(0, 212, 255, 0.18);
-    border: 1px solid rgba(0, 212, 255, 0.2);
-    backdrop-filter: blur(20px) saturate(180%);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.40);
+    border: 1px solid rgba(200, 169, 106, 0.14);
+    backdrop-filter: blur(12px);
+    transition: all 0.3s ease;
     position: relative;
-    border-radius: 16px;
-    background: rgba(10, 14, 26, 0.55) !important;
-    
-    &::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        border-radius: 16px;
-        background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(99, 102, 241, 0.1));
-        opacity: 0;
-        transition: opacity 0.4s ease;
-        z-index: 0;
-    }
-    
+    border-radius: 14px;
+    background: rgba(18, 16, 12, 0.70) !important;
+
     &:hover {
-        transform: translateY(-8px) scale(1.02);
-        box-shadow: 
-            0 20px 60px rgba(0, 212, 255, 0.25),
-            0 0 0 1px rgba(0, 212, 255, 0.3) inset,
-            0 0 40px rgba(0, 212, 255, 0.15);
-        border-color: rgba(0, 212, 255, 0.4);
-        
-        &::before {
-            opacity: 1;
-        }
+        transform: translateY(-4px);
+        box-shadow: 0 16px 44px rgba(0, 0, 0, 0.50), 0 0 0 1px rgba(200, 169, 106, 0.26);
+        border-color: rgba(200, 169, 106, 0.28);
     }
 
-    // Country flag badge styles
+    /* Country flag badge */
     .country-flag {
         position: absolute;
-        top: 15px;
-        right: 15px;
-        width: 45px;
-        height: 45px;
+        top: 14px;
+        right: 14px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.9);
-        backdrop-filter: blur(10px);
-        border: 2px solid rgba(0, 212, 255, 0.3);
+        background: rgba(255, 255, 255, 0.90);
+        border: 2px solid rgba(200, 169, 106, 0.30);
         display: flex;
         align-items: center;
         justify-content: center;
         z-index: 10;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 212, 255, 0.2) inset;
+        transition: all 0.3s ease;
         overflow: hidden;
-        backdrop-filter: blur(10px);
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
 
         img {
             width: 100%;
@@ -137,46 +121,44 @@
     }
 
     &:hover .country-flag {
-        transform: scale(1.15) rotate(8deg);
-        border-color: rgba(0, 212, 255, 0.6);
-        box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4), 0 0 0 1px rgba(0, 212, 255, 0.4) inset;
+        transform: scale(1.12);
+        border-color: rgba(200, 169, 106, 0.55);
+    }
+}
+
+.light-mode .vertical-timeline-element-content {
+    background: rgba(255, 255, 255, 0.92) !important;
+    border-color: rgba(200, 169, 106, 0.16);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07) !important;
+
+    &:hover {
+        box-shadow: 0 14px 40px rgba(0, 0, 0, 0.10), 0 0 0 1px rgba(200, 169, 106, 0.25) !important;
+        border-color: rgba(200, 169, 106, 0.30);
     }
 }
 
 .vertical-timeline-element-icon {
-    box-shadow: 
-        0 0 0 4px rgba(0, 212, 255, 0.25),
-        0 12px 30px rgba(0, 212, 255, 0.3),
-        0 0 40px rgba(99, 102, 241, 0.2);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    background: linear-gradient(135deg, #00d4ff, #6366f1) !important;
-    
+    box-shadow:
+        0 0 0 3px rgba(200, 169, 106, 0.20),
+        0 8px 20px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+
     &:hover {
-        transform: scale(1.15) rotate(10deg);
-        box-shadow: 
-            0 0 0 6px rgba(0, 212, 255, 0.3),
-            0 16px 40px rgba(0, 212, 255, 0.4),
-            0 0 60px rgba(99, 102, 241, 0.3);
+        transform: scale(1.10);
+        box-shadow:
+            0 0 0 4px rgba(200, 169, 106, 0.35),
+            0 12px 28px rgba(0, 0, 0, 0.40);
     }
 }
 
 .vertical-timeline-element .vertical-timeline-element-date {
-    color: white;
+    color: rgba(240, 236, 228, 0.75);
     font-weight: 500;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.light-mode .vertical-timeline-element-content {
-    background: rgba(255, 255, 255, 0.88) !important;
-    box-shadow:
-        0 12px 40px rgba(0, 0, 0, 0.1),
-        0 0 0 1px rgba(0, 212, 255, 0.15) inset,
-        inset 0 2px 0 rgba(0, 212, 255, 0.25) !important;
+    font-size: 0.88em;
 }
 
 .light-mode .vertical-timeline-element .vertical-timeline-element-date {
-    color: #5a5a5a;
-    text-shadow: none;
+    color: #6b5e4a;
 }
 
 .svg-inline--fa {
@@ -184,52 +166,50 @@
 }
 
 .light-mode .svg-inline--fa {
-    color: #0d1116;
+    color: white;
 }
 
 @media screen and (max-width: 1170px) {
     .vertical-timeline-element .vertical-timeline-element-date {
-        color: rgb(39, 40, 34);
+        color: rgba(240, 236, 228, 0.70);
     }
 
     .vertical-timeline-element-content {
         .country-flag {
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             top: 12px;
             right: 12px;
         }
     }
 }
 
-  .visible-link {
+.visible-link {
     visibility: visible;
     opacity: 1;
     display: inline;
-    color: #00d4ff;
+    color: #c8a96a;
     text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.25s ease;
     font-weight: 600;
     position: relative;
-    
+
     &::after {
         content: '';
         position: absolute;
-        bottom: -2px;
+        bottom: -1px;
         left: 0;
         width: 0;
-        height: 2px;
-        background: linear-gradient(90deg, #00d4ff, #6366f1);
-        transition: width 0.3s ease;
+        height: 1px;
+        background: #c8a96a;
+        transition: width 0.25s ease;
     }
-  }
-  
-  .visible-link:hover {
-    color: #6366f1;
-    transform: translateX(4px);
-    
-    &::after {
-        width: 100%;
+
+    &:hover {
+        color: #e8c270;
+
+        &::after {
+            width: 100%;
+        }
     }
-  }
-  
+}

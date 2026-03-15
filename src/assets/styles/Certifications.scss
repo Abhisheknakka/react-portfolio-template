@@ -5,190 +5,110 @@
     text-align: left;
 
     h1 {
-        font-size: 3.2em;
-        margin-bottom: 50px;
-        background: linear-gradient(135deg, #00d4ff, #6366f1, #8b5cf6);
-        background-size: 200% 200%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        font-weight: 800;
+        font-size: 3em;
+        margin-bottom: 52px;
+        font-weight: 700;
         text-align: center;
         letter-spacing: -0.5px;
-        animation: gradient-animation 4s ease infinite;
-    }
-    
-    @keyframes gradient-animation {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
     }
 }
 
 .certifications-container .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
+    grid-gap: 28px;
 }
 
 .certifications-container .skill {
     background: rgba(255, 255, 255, 0.04);
-    padding: 40px;
-    border-radius: 24px;
-    border: 1px solid rgba(0, 212, 255, 0.15);
-    backdrop-filter: blur(20px) saturate(180%);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 36px;
+    border-radius: 16px;
+    border: 1px solid rgba(200, 169, 106, 0.12);
+    transition: all 0.3s ease;
     align-items: center;
     text-align: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 2px 0 rgba(0, 212, 255, 0.12);
-    
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(99, 102, 241, 0.15));
-        opacity: 0;
-        transition: opacity 0.5s ease;
-        z-index: 0;
-    }
-    
-    &::after {
-        content: '';
-        position: absolute;
-        top: -50%;
-        right: -50%;
-        width: 200%;
-        height: 200%;
-        background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
-        opacity: 0;
-        transition: opacity 0.5s ease;
-        z-index: 0;
-    }
-    
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+
     &:hover {
-        transform: translateY(-12px) scale(1.02);
-        box-shadow:
-            0 24px 80px rgba(0, 212, 255, 0.25),
-            0 0 0 1px rgba(0, 212, 255, 0.3) inset,
-            0 0 60px rgba(0, 212, 255, 0.15),
-            inset 0 2px 0 rgba(0, 212, 255, 0.6);
-        border-color: rgba(0, 212, 255, 0.4);
-        
-        &::before {
-            opacity: 1;
-        }
-        
-        &::after {
-            opacity: 1;
-        }
-        
+        transform: translateY(-6px);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(200, 169, 106, 0.28);
+        border-color: rgba(200, 169, 106, 0.32);
+
         .cert-icon {
-            transform: scale(1.12) rotate(8deg);
+            transform: scale(1.08);
+            border-color: rgba(200, 169, 106, 0.35);
         }
-        
+
         h3 {
-            background: linear-gradient(135deg, #00d4ff, #6366f1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        svg {
-            transform: scale(1.15) rotate(8deg);
-            color: #00d4ff;
-            filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.5));
+            color: #e8c270;
+            -webkit-text-fill-color: #e8c270;
         }
     }
 }
 
 .certifications-container .skill h3 {
-    color: white;
-    margin-top: 15px;
-    font-size: 1.3rem;
+    color: #f0ece4;
+    -webkit-text-fill-color: #f0ece4;
+    margin-top: 16px;
+    font-size: 1.15rem;
     font-weight: 600;
-    transition: all 0.3s ease;
-    position: relative;
-    z-index: 1;
-}
-
-.light-mode .certifications-container .skill h3 {
-    color: #0d1116;
+    transition: color 0.25s ease;
+    letter-spacing: -0.1px;
+    line-height: 1.4;
 }
 
 .certifications-container .skill p {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1rem;
-    line-height: 1.7;
+    color: rgba(240, 236, 228, 0.65);
+    -webkit-text-fill-color: rgba(240, 236, 228, 0.65);
+    font-size: 0.93rem;
+    line-height: 1.72;
     margin-top: 10px;
-    position: relative;
-    z-index: 1;
-}
-
-.light-mode .certifications-container .skill p {
-    color: rgba(13, 17, 22, 0.8);
 }
 
 .certifications-container svg {
-    color: #a64ac9;
-    transition: all 0.3s ease;
-    position: relative;
-    z-index: 1;
+    color: #c8a96a;
+    transition: all 0.25s ease;
 }
 
 .cert-icon {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    z-index: 1;
-    border-radius: 16px;
-    padding: 12px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(0, 212, 255, 0.15);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border-radius: 14px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(200, 169, 106, 0.14);
 }
-
 
 @media (max-width: 768px) {
     .certifications-container {
         display: block;
         padding: 10% 5%;
-        
-        h1 {
-            font-size: 2.2em;
-        }
+
+        h1 { font-size: 2.2em; }
     }
 
     .certifications-container .skills-grid {
         grid-template-columns: 1fr;
-        grid-gap: 30px;
+        grid-gap: 20px;
     }
-    
+
     .certifications-container .skill {
-        padding: 25px;
-        
-        h3 {
-            font-size: 1.2rem;
-        }
-        
-        p {
-            font-size: 0.95rem;
-        }
+        padding: 24px;
+
+        h3 { font-size: 1.1rem; }
+        p { font-size: 0.90rem; }
     }
-    
+
     .cert-icon {
-        width: 70px;
-        height: 70px;
+        width: 72px;
+        height: 72px;
     }
 }
