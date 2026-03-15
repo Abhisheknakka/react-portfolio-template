@@ -116,6 +116,20 @@
         animation: fadeInUp 0.8s ease-out 0.2s both;
     }
 
+    .tagline {
+        font-size: 1em;
+        margin-block-start: 6px;
+        margin-block-end: 24px;
+        background: none;
+        -webkit-background-clip: initial;
+        background-clip: initial;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0.45);
+        color: rgba(255, 255, 255, 0.45);
+        font-weight: 400;
+        letter-spacing: 0.6px;
+        animation: fadeInUp 0.8s ease-out 0.5s both;
+    }
+
     h1 {
         font-size: 5.5em;
         margin-block-start: 0px;
@@ -167,8 +181,8 @@
     }
     
     img {
-        width: 160px;
-        height: 160px;
+        width: 220px;
+        height: 220px;
         border-radius: 50%;
         object-fit: cover;
         border: 3px solid rgba(255, 255, 255, 0.15);

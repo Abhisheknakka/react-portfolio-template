@@ -20,46 +20,69 @@
 }
 
 .vertical-timeline p {
-    color: rgb(39, 40, 34);
+    color: rgba(255, 255, 255, 0.85);
     line-height: 1.7;
+}
+
+.light-mode .vertical-timeline p {
+    color: rgba(13, 17, 22, 0.8);
 }
 
 .vertical-timeline-element {
     p {
-        color: rgb(39, 40, 34);
+        color: rgba(255, 255, 255, 0.85);
         font-size: 1em;
         line-height: 1.7;
     }
-    
+
     h3 {
-        color: rgb(39, 40, 34);
+        color: white;
         font-weight: 600;
         font-size: 1.4em;
         margin-bottom: 10px;
     }
-    
+
     h4 {
-        color: rgb(39, 40, 34);
+        color: rgba(255, 255, 255, 0.75);
         font-weight: 500;
         font-size: 1.1em;
         opacity: 0.9;
     }
-    
+
     span {
-        color: rgb(39, 40, 34);
+        color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.light-mode .vertical-timeline-element {
+    p {
+        color: rgba(13, 17, 22, 0.8);
+    }
+
+    h3 {
+        color: #0d1116;
+    }
+
+    h4 {
+        color: rgba(13, 17, 22, 0.7);
+    }
+
+    span {
+        color: #0d1116;
     }
 }
 
 .vertical-timeline-element-content {
-    box-shadow: 
+    box-shadow:
         0 12px 40px rgba(0, 0, 0, 0.2),
-        0 0 0 1px rgba(0, 212, 255, 0.15) inset;
+        0 0 0 1px rgba(0, 212, 255, 0.15) inset,
+        inset 0 2px 0 rgba(0, 212, 255, 0.18);
     border: 1px solid rgba(0, 212, 255, 0.2);
     backdrop-filter: blur(20px) saturate(180%);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(10, 14, 26, 0.55) !important;
     
     &::before {
         content: '';
@@ -141,6 +164,14 @@
     color: white;
     font-weight: 500;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.light-mode .vertical-timeline-element-content {
+    background: rgba(255, 255, 255, 0.88) !important;
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(0, 212, 255, 0.15) inset,
+        inset 0 2px 0 rgba(0, 212, 255, 0.25) !important;
 }
 
 .light-mode .vertical-timeline-element .vertical-timeline-element-date {

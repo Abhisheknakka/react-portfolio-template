@@ -15,6 +15,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
 
 const drawerWidth = 240;
 const navItems = [['Education', 'education'], ['Certifications','certifications'],['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
@@ -78,26 +79,33 @@ function Navigation({parentToChild, modeChange}: any) {
       <CssBaseline />
       <AppBar component="nav" id="navigation" className={`navbar-fixed-top${scrolled ? ' scrolled' : ''}`}>
         <Toolbar className='navigation-bar'>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          {mode === 'dark' ? (
-            <LightModeIcon onClick={() => modeChange()}/>
-          ) : (
-            <DarkModeIcon onClick={() => modeChange()}/>
-          )}
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
-                {item[0]}
-              </Button>
-            ))}
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ display: { sm: 'none' } }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography className="nav-brand" sx={{ display: { xs: 'none', sm: 'block' } }}>
+              Abhishek Nakka
+            </Typography>
+          </Box>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            {mode === 'dark' ? (
+              <LightModeIcon onClick={() => modeChange()}/>
+            ) : (
+              <DarkModeIcon onClick={() => modeChange()}/>
+            )}
+            <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+              {navItems.map((item) => (
+                <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: mode === 'dark' ? 'rgba(255,255,255,0.9)' : 'rgba(10,14,26,0.85)' }}>
+                  {item[0]}
+                </Button>
+              ))}
+            </Box>
           </Box>
         </Toolbar>
       </AppBar>

@@ -26,10 +26,10 @@ function Timeline() {
           {/* Shyftlabs - Data Engineer */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)', position: 'relative' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
+            contentStyle={{ position: 'relative' }}
+            contentArrowStyle={{ borderRight: '7px solid rgba(0, 212, 255, 0.15)' }}
             date="Jul 2025 – Present"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            iconStyle={{ background: 'linear-gradient(135deg, #00d4ff, #6366f1)', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <div className="country-flag">
@@ -63,10 +63,10 @@ function Timeline() {
           {/* Darwinbox - Technical Analyst */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)', position: 'relative' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
+            contentStyle={{ position: 'relative' }}
+            contentArrowStyle={{ borderRight: '7px solid rgba(0, 212, 255, 0.15)' }}
             date="Mar 2022 – Dec 2023"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            iconStyle={{ background: 'linear-gradient(135deg, #00d4ff, #6366f1)', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <div className="country-flag">
@@ -102,7 +102,7 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ position: 'relative' }}
             date="Jan 2022 – Mar 2022"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            iconStyle={{ background: 'linear-gradient(135deg, #00d4ff, #6366f1)', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <div className="country-flag">
@@ -139,7 +139,7 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ position: 'relative' }}
             date="Jun 2021 – Dec 2022"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            iconStyle={{ background: 'linear-gradient(135deg, #00d4ff, #6366f1)', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <div className="country-flag">
@@ -175,7 +175,7 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ position: 'relative' }}
             date="Jan 2020 – May 2021"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            iconStyle={{ background: 'linear-gradient(135deg, #00d4ff, #6366f1)', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <div className="country-flag">
